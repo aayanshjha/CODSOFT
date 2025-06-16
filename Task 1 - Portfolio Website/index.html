@@ -3,56 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>Aayansh Kumar Jha - Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
     }
     header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    section {
-      padding: 20px;
-    }
-    .project {
-      margin-bottom: 15px;
-    }
-    footer {
-      text-align: center;
-      background-color: #333;
+      background-color: #282c34;
       color: white;
-      padding: 10px;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #aaa;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #444;
+    }
+
+    .about img {
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      width: 150px;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .skills li {
+      background-color: #ddd;
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .project-card .content {
+      padding: 15px;
+    }
+
+    .resume a {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .contact p {
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    footer {
+      background-color: #282c34;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Aayansh Kumar Jha</h1>
     <p>Web Developer | Intern @ CodSoft</p>
   </header>
 
-  <section>
+  <section class="about">
     <h2>About Me</h2>
-    <p>I am a passionate web developer currently doing a virtual internship at CodSoft. I love building responsive and creative web applications.</p>
+    <img src="https://via.placeholder.com/150" alt="My Photo">
+    <p style="text-align: center;">
+      I’m a passionate web developer with strong skills in HTML, CSS, and JavaScript.
+      Currently pursuing a virtual internship at CodSoft, where I'm building real-world projects.
+    </p>
   </section>
 
-  <section>
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section class="projects">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>A responsive portfolio website built using HTML and CSS.</p>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300x180" alt="Project 1">
+      <div class="content">
+        <h3>Portfolio Website</h3>
+        <p>A fully responsive personal portfolio built with HTML and CSS.</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300x180" alt="Project 2">
+      <div class="content">
+        <h3>Calculator App</h3>
+        <p>A simple calculator with basic math operations using HTML, CSS, and JS.</p>
+      </div>
     </div>
   </section>
 
+  <section class="resume">
+    <h2>Resume</h2>
+    <p style="text-align: center;">Click the link below to download my resume in PDF format:</p>
+    <a href="resume.pdf" download>Download Resume</a>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>
+      📧 Email: aayansh.jha@example.com<br>
+      📞 Phone: +91-9876543210
+    </p>
+  </section>
+
   <footer>
-    <p>&copy; 2025 Aayansh Kumar Jha</p>
+    <p>&copy; 2025 Aayansh Kumar Jha | All Rights Reserved</p>
   </footer>
+
 </body>
 </html>
-

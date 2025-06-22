@@ -92,26 +92,12 @@ section h2 span {
   font-weight: bold;
 }
 
-form {
-  max-width: 600px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-form input, form textarea {
+#contact p {
   margin: 10px 0;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
 }
-form button {
-  padding: 10px;
-  background: #00bfff;
-  border: none;
-  color: white;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
+#contact a {
+  color: #00bfff;
+  text-decoration: none;
 }
 footer {
   text-align: center;
@@ -119,4 +105,3 @@ footer {
   padding: 20px;
   margin-top: 30px;
 }
-

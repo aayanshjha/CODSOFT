@@ -23,14 +23,29 @@ header p {
   font-size: 1.2rem;
   color: #ccc;
 }
+.buttons {
+  margin-top: 20px;
+}
+
 .buttons a {
   margin: 10px;
-  padding: 14px 28px;
+  padding: 14px 32px;
   background: #00bfff;
   color: white;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.2);
 }
+
+.buttons a:hover {
+  background: #0095cc;
+  transform: translateY(-2px);
+}
+
 section {
   padding: 50px 20px;
   text-align: center;
